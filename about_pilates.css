@@ -1,0 +1,112 @@
+@media only screen and (max-width: 500px) {
+    .menu-drop-down {
+        min-height: 220px;
+    }
+    .menu-drop-down li {
+        width: 100%;
+        text-align: center;
+    }
+    .phone-number-header {
+        display: none;
+    }
+    .footer-top {
+        flex-flow: column;
+    }
+    .footer-top .logo {
+        display: none;
+    }
+}
+
+body {
+    height: 100%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.header {
+    background: var(--main-color);
+    height: 100px;
+    color: var(--text-on-bg-color);
+
+}
+
+.top-line {
+    height: 80px;
+    padding-top: 10px;
+}
+
+.menu-drop-down {
+    display: none;
+    background: var(--main-color);
+    height: 80px;
+}
+
+.menu-drop-down li {
+    float: left;
+    margin-right: 35px;
+    font-size: 18pt;
+}
+
+.menu-drop-down li:hover {
+    text-decoration: underline;
+}
+
+.menu-drop-down li:last-child {
+    margin-right: 0;
+}
+
+.menu-drop-down a {
+    color: var(--text-on-bg-color);
+}
+
+.menu-drop-down a:active {
+    color: var(--links-color);
+}
+
+.display-menu {
+    display: block;
+}
+
+.main-part img {
+    width: 70%;
+    position: relative;
+}
+
+.main-part ul li {
+    margin: 1em;
+}
+
+.main-part ul li:hover {
+    text-shadow: 5px 5px 3px var(--lightest-color);
+}
+
+.main-part h2 {
+    text-shadow: 5px 5px 3px var(--lightest-color);
+}
+
+.main-part ul li::before {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var(--main-color);
+    /* Change the color */
+    font-weight: 900;
+    /* If you want it to be bold */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    /* Also needed for space (tweak if needed) */
+    margin-left: -1em;
+    /* Also needed for space (tweak if needed) */
+}
+
+.main-part div {
+    background-image: url("dots2.png"), url("dots3.png");
+    background-repeat: no-repeat;
+    background-position: 90% 10%, 90% 90%;
+}
+
+.current-link {
+    color: var(--links-color) !important;
+}
