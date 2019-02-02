@@ -104,7 +104,24 @@
     .img-exs-4 {
         width: 110% !important;
     }
-
+    .review-part {
+        height: auto!important;
+    }
+    .review-part .conteiner-review{
+        width: 100%;
+       height: auto;
+      
+    }
+    .slideshow-container .review-card{
+        flex-flow: column;
+    }
+    .review-card .text{
+        width: 100%;
+        text-align: center;
+    }
+    .numbertext{
+        display: none;
+    }
     .footer-top {
         flex-flow: column;
     }
@@ -578,7 +595,9 @@ h4 {
 .ex4 {
     background: url('ex4.png') no-repeat;
 }
-
+.review-part {
+    position: relative;
+}
 .conteiner-review {
     overflow: hidden;
     width: 80%;
@@ -630,7 +649,7 @@ h4 {
 .next {
     cursor: pointer;
     width: auto;
-    margin-top: -22px;
+    margin-top: -20px;
     padding: 16px;
     color:black;
     font-weight: bold;
@@ -638,12 +657,17 @@ h4 {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    position: absolute;
+    top: 50%;
 }
 
 /* Position the "next button" to the right */
 .next {
-    right: 0;
+    right: 0px;
     border-radius: 3px 0 0 3px;
+}
+.prev {
+    left: 0px;
 }
 /* The dots/bullets/indicators */
 .dot {
