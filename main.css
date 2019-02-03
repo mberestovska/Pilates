@@ -21,8 +21,7 @@
         text-align: center;
     }
 
-    .phone-number-header,
-    .footer-top .logo {
+    .phone-number-header {
         display: none;
     }
 
@@ -61,7 +60,6 @@
 
     .exercise {
         width: 100% !important;
-
     }
 
     .ex1,
@@ -122,10 +120,29 @@
     .numbertext{
         display: none;
     }
-    .footer-top {
-        flex-flow: column;
+    .container .block-address {
+        position: relative;
+        width: 100%;
     }
-
+    #map {
+        background-size: contain!important;
+        background-repeat: no-repeat;
+        height: 135px!important;
+        transition: all 200ms ease-in;
+        transform: scale(1); 
+    }
+    #map:hover {
+        transition: all 200ms ease-in;
+        transform: scale(2);
+        z-index: 5;
+    }
+    .footer {
+        height: 160px!important;
+    }
+    .container .footer-top {
+        flex-flow: column;
+        height: 140px;
+    }
 }
 
 body {
